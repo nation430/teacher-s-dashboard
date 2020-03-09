@@ -130,7 +130,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#">
+                <a href="users.html">
                   <i class="fas fa-file-invoice"></i>
                   <p class="fw-bold" style="font-size:small;">Users</p>
                 </a>
@@ -165,12 +165,12 @@
 
       <div class="main-panel">
         <div class="container">
-          <div class="page-inner mt-3">
+          <div class="page-inner mt--4">
             <h4 class=" fw-bold pt-3">Schools</h4>
           </div>
-          <div class="page-inner mt-3">
+          <div class="page-inner">
             <div class="row row-p d-flex  ">
-              <div class="col-md-4 bg-white pt-3 pb-3 ">
+              <div class="col-md-4 bg-white pt-3 ">
                 <ul>
                   <li class="nav-item text-item active">
                     <a href="settings.html">
@@ -205,121 +205,59 @@
               </div>
               <div class="col-md-8 pt-3 pb-3 bg-sucess">
                 <div class="row">
-                  <div class="col-md-7">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5>Roles</h5>
-                        <p>Set up administrive roles for certain users here</p>
-                      </div>
-                    </div>
+                  <div class="col-sm-8">
+                    <h5>Roles</h5>
+                    <p>Set up administrive roles for certain users here</p>
                   </div>
-                  <div class="col-md-5 ml-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <ul>
-                          <li class="nav-item"><a href="#"></a>Add New User</li>
-                        </ul>
-                      </div>
+                  <div class="col-sm-4">
+                    <div class=" add-newUser">
+                      <p>Add New User</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="row ">
-                  <div class="col-md-4 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <p>Email Address</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <p>Role</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <p>Access Level</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  <div class="table-responsive table-sales">
+                    <table id="basic-datatables" class="display table">
+                      <thead>
+                        <tr>
+                          <th>Email Address</th>
+                          <th>Role</th>
+                          <th>Access Level</th>
+                        </tr>
+                      </thead>
 
-                <div class="row ">
-                  <div class=" col-sm-6 col-md-4 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <code>col-md-4 ml-auto mr-auto</code>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-sm-6 col-md-2 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <p>Admin</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-sm-6 col-md-2 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <p>Full</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-sm-6 col-md-2 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <p>Edit</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-sm-6 col-md-2 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <p>Delete</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row ">
-                  <div class=" col-sm-6 col-md-4 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <code>col-md-4 ml-auto mr-auto</code>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-sm-6 col-md-2 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <p>Admin</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-sm-6 col-md-2 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <p>Full</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-sm-6 col-md-2 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <p>Edit</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-sm-6 col-md-2 ml-auto mr-auto">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <p>Delete</p>
-                      </div>
-                    </div>
+                      <tbody>
+                        <tr>
+                          <td>Adminstrator@myself.net</td>
+                          <td>
+                            Admin
+                          </td>
+                          <td>
+                            Full
+                          </td>
+
+                          <td>
+                            <span class="muted-text"> Edit</span>
+                            <span class="muted-text"> Delete</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Adminstrator@myself.net</td>
+                          <td>
+                            Admin
+                          </td>
+                          <td>
+                            Full
+                          </td>
+
+                          <td>
+                            <span class="muted-text"> Edit</span>
+                            <span class="muted-text"> Delete</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
 
@@ -487,6 +425,7 @@
     </div>
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
     <script src="assets/js/core/bootstrap.min.js"></script>
 
     <!-- jQuery UI -->
@@ -496,8 +435,20 @@
     <!-- jQuery Scrollbar -->
     <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 
+    <!-- Moment JS -->
+    <script src="assets/js/plugin/moment/moment.min.js"></script>
+
     <!-- Chart JS -->
     <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
 
     <!-- Bootstrap Notify -->
     <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
@@ -505,11 +456,45 @@
     <!-- Bootstrap Toggle -->
     <script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
 
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+    <script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+    <!-- Google Maps Plugin -->
+    <script src="assets/js/plugin/gmaps/gmaps.js"></script>
+
+    <!-- Dropzone -->
+    <script src="assets/js/plugin/dropzone/dropzone.min.js"></script>
+
+    <!-- Fullcalendar -->
+    <script src="assets/js/plugin/fullcalendar/fullcalendar.min.js"></script>
+
     <!-- DateTimePicker -->
     <script src="assets/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
 
+    <!-- Bootstrap Tagsinput -->
+    <script src="assets/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+    <!-- Bootstrap Wizard -->
+    <script src="assets/js/plugin/bootstrap-wizard/bootstrapwizard.js"></script>
+
     <!-- jQuery Validation -->
     <script src="assets/js/plugin/jquery.validate/jquery.validate.min.js"></script>
+
+    <!-- Summernote -->
+    <script src="assets/js/plugin/summernote/summernote-bs4.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="assets/js/plugin/select2/select2.full.min.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugin/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <script src="assets/js/plugin/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Atlantis JS -->
     <script src="assets/js/atlantis.min.js"></script>

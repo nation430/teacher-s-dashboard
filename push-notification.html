@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tech-Dashboard</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link rel="icon" href="assets/img/icon.ico" type="image/x-icon" />
+
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Lato:300,400,700,900"] },
+        custom: {
+          families: [
+            "Flaticon",
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons"
+          ],
+          urls: ["assets/css/fonts.min.css"]
+        },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/atlantis.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/scroll.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-header">
+        <!-- Logo Header -->
+        <div
+          class="logo-header"
+          data-background-color=""
+          style="background:#170597"
+        >
+          <a href="index.html" class="logo pt-3 pl-3 text-white">
+            <h3 class="">Teacheable</h3>
+          </a>
+          <button
+            class="navbar-toggler sidenav-toggler ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="icon-menu"></i>
+            </span>
+          </button>
+          <button class="topbar-toggler more">
+            <i class="icon-options-vertical"></i>
+          </button>
+          <div class="nav-toggle">
+            <button class="btn btn-toggle toggle-sidebar">
+              <i class="icon-menu"></i>
+            </button>
+          </div>
+        </div>
+        <!-- End Logo Header -->
+
+        <!-- Navbar Header -->
+        <nav
+          class="navbar navbar-header navbar-expand-lg"
+          data-background-color=""
+          style="background:#f6f5f7;"
+        >
+          <div class="container-fluid">
+            <div class="collapse" id="search-nav"></div>
+            <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+              <li class="nav-item toggle-nav-search hidden-caret">
+                <a
+                  class="nav-link"
+                  data-toggle="collapse"
+                  href="#search-nav"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="search-nav"
+                >
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link quick-sidebar-toggler">
+                  <div class="header-img">
+                    <div class="profile-circle"></div>
+                    <img src="" class="profile-pic" />
+                    <p>Hello Debbi!</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+
+      <!-- Sidebar -->
+      <div
+        class="sidebar sidebar-style-2"
+        data-background-color="blue2"
+        style="background:  #0500AE !important"
+      >
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-primary">
+              <li class="nav-item">
+                <a href="index.html">
+                  <i class="fas fa-home"></i>
+                  <p class="fw-bold" style="font-size:small;">Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a href="#">
+                  <i class="fas fa-briefcase"></i>
+                  <p class="fw-bold" style="font-size:small;">Teacher</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="school.html">
+                  <i class="fas fa-wallet"></i>
+                  <p class="fw-bold" style="font-size:small;">School</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fas fa-file-invoice"></i>
+                  <p class="fw-bold" style="font-size:small;">Users</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="push-notification.html">
+                  <i class="fas fa-link"></i>
+                  <p class="fw-bold" style="font-size:small;">
+                    Push Notification
+                  </p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fas fa-cog"></i>
+                  <p class="fw-bold" style="font-size:small;">Support Ticket</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="settings.html">
+                  <i class="fas fa-question-circle"></i>
+                  <p class="fw-bold" style="font-size:small;">
+                    Setting
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel ">
+        <div class="container ">
+          <div class="page-inner mt-3">
+            <h4 class=" fw-bold pt-3 mb">Push Notifications</h4>
+
+            <ul class="nav d-flex justify-content-end ">
+              <li class="nav-item ">
+                <a class="" href="#">
+                  <span class=" ">
+                    <button
+                      type="button"
+                      class=" history text-white"
+                      data-toggle="modal"
+                      data-target="#exampleModalLong"
+                    >
+                      History
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="exampleModalLong"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="exampleModalLongTitle"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content modal-content2">
+                          
+                          <div class="modal-header ">
+                            <h5
+                              class="modal-title text-dark"
+                              id="exampleModalLongTitle"
+                            >
+                             Push Notification History
+                            </h5>
+                          
+                          <div class="">
+                            <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  type="button"
+                                  class="btn text-muted dropdown-toggle"
+                                  aria-expanded="false"
+                                >
+                                  June
+                                </button>
+                                <div
+                                  role="menu"
+                                  class="dropdown-menu"
+                                  x-placement="bottom-start"
+                                  style="position: absolute; transform: translate3d(0px, 43px, 0px); top: 0px; left: 0px; will-change: transform;"
+                                >
+                                  <a href="#" class="dropdown-item"
+                                    >User Information</a
+                                  ><a href="#" class="dropdown-item"
+                                    >Delete User</a
+                                  ><a href="#" class="dropdown-item"
+                                    >Ban User</a
+                                  >
+
+                                  <a href="#" class="dropdown-item"
+                                    >Delete</a
+                                  >
+                                </div>
+                              </div>
+                            
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          </div>
+
+                      
+                          <div class="modal-body d-flex ml-3 mt--4">
+
+
+                              <div class="table-responsive table-sales">
+                                  <table id="basic-datatables" class="display table">
+                                    <thead>
+                                      <tr>
+                                        <th>Title</th>
+                                        <th>Notification Type</th>
+                                        <th>Date Sent</th>
+                                        <th>Recipients</th>
+                                      </tr>
+                                    </thead>
+              
+                                    <tbody>
+                                      <tr>
+                                        <td>Welcome To Teachable</td>
+                                        <td>
+                                          SMS / Emails
+                                        </td>
+                                        <td>
+                                        12 June 2019
+                                        </td>
+                                        <td>
+                                            37,201
+                                            </td>
+                                      
+                                      </tr>
+                                      <tr>
+                                          <td>Welcome To Teachable</td>
+                                          <td>
+                                            SMS / Emails
+                                          </td>
+                                          <td>
+                                          12 June 2019
+                                          </td>
+                                          <td>
+                                              37,201
+                                              </td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td>Welcome To Teachable</td>
+                                            <td>
+                                              SMS / Emails
+                                            </td>
+                                            <td>
+                                            12 June 2019
+                                            </td>
+                                            <td>
+                                                37,201
+                                                </td>
+                                          
+                                          </tr>
+                                          <tr>
+                                              <td>Welcome To Teachable</td>
+                                              <td>
+                                                SMS / Emails
+                                              </td>
+                                              <td>
+                                              12 June 2019
+                                              </td>
+                                              <td>
+                                                  37,201
+                                                  </td>
+                                            
+                                            </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                          </div>
+                          <div class="modal-footer">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+
+                  <span class=" bg-success ">
+                    <button
+                      type="button"
+                      class=" bg-success text-white"
+                      data-toggle="modal"
+                      data-target="#exampleModalLong"
+                    >
+                      New Notification
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="exampleModalLong"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="exampleModalLongTitle"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header ml-3">
+                            <h5
+                              class="modal-title text-dark"
+                              id="exampleModalLongTitle"
+                            >
+                              New Push Notifications
+                            </h5>
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body d-flex">
+                            <form>
+                              <div class="form-group ">
+                                <label for="text">Title</label>
+                                <input
+                                  type="text"
+                                  class="form-control input-solid"
+                                  id="text"
+                                />
+                              </div>
+
+                              <div class="form-group ">
+                                <label for="text">Notification Type</label>
+                                <div class="input-group">
+                                  <input
+                                    type="text"
+                                    class="form-control input-solid"
+                                    aria-label="Text input with dropdown button"
+                                  />
+                                  <div class="input-group-append">
+                                    <button
+                                      class="btn btn-primary btn-border dropdown-toggle"
+                                      type="button"
+                                      data-toggle="dropdown"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      Dropdown
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#"
+                                        >Action</a
+                                      >
+                                      <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                      >
+                                      <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                      >
+                                      <div
+                                        role="separator"
+                                        class="dropdown-divider"
+                                      ></div>
+                                      <a class="dropdown-item" href="#"
+                                        >Separated link</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group p-0 ml-3">
+                                <label for="comment">Message</label>
+                                <textarea
+                                  class="form-control input-solid"
+                                  id="comment"
+                                  rows="5"
+                                >
+                                </textarea>
+                              </div>
+
+                              <div class="col-md-8 d-flex mt-3">
+                                <div class="col-sm-4">
+                                  <p>Audience</p>
+                                </div>
+
+                                <div class="col-sm-3 ">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      type="button"
+                                      class="btn text-muted dropdown-toggle "
+                                      aria-expanded="false"
+                                    >
+                                      Select Location
+                                    </button>
+                                    <div
+                                      role="menu"
+                                      class="dropdown-menu"
+                                      x-placement="bottom-start"
+                                      style="position: absolute; transform: translate3d(0px, 43px, 0px); top: 0px; left: 0px; will-change: transform;"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >User Information</a
+                                      ><a href="#" class="dropdown-item"
+                                        >Delete User</a
+                                      ><a href="#" class="dropdown-item"
+                                        >Ban User</a
+                                      >
+
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-sm-3 ">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      type="button"
+                                      class="btn text-muted dropdown-toggle "
+                                      style="margin-left:50px;"
+                                      aria-expanded="false"
+                                    >
+                                      Select User Type
+                                    </button>
+                                    <div
+                                      role="menu"
+                                      class="dropdown-menu"
+                                      x-placement="bottom-start"
+                                      style="position: absolute; transform: translate3d(0px, 43px, 0px); top: 0px; left: 0px; will-change: transform;"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >User Information</a
+                                      ><a href="#" class="dropdown-item"
+                                        >Delete User</a
+                                      ><a href="#" class="dropdown-item"
+                                        >Ban User</a
+                                      >
+
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <p>Scheduled for: 12/08/19-9:00am</p>
+                            <button
+                              class="btn btn-black  btn-footerPush      "
+                              disabled="disabled"
+                            >
+                              Edit
+                            </button>
+                            <button class="btn btn-danger btn-footerPush">
+                              Delete
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-primary btn-footerPush text-right "
+                              data-dismiss="modal"
+                            >
+                              Shedule
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="row  page-inner ">
+            <div class="col-sm-3">
+              <div class="card text-white" style="background-color:#74f1b6;">
+                <div class="card-body">
+                  <p class="card-text">Total Messages</p>
+                  <p class="card-num">124,892</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-white" style="background-color:#e815b3;">
+                <div class="card-body">
+                  <p class="card-text">Total Receipients</p>
+                  <p class="card-num">934,278</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-white bg-info">
+                <div class="card-body">
+                  <p class="card-text">In App Notification</p>
+                  <p class="card-num">269,901</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-white bg-danger">
+                <div class="card-body">
+                  <p class="card-text">SMs Email Notification</p>
+                  <p class="card-num">165,789</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-inner ">
+            <div class="container">
+              <div class="row row-card-no-pd">
+                <div class="col-md-12 d-flex progress-lastSeen">
+                  <div class="col-sm-3 ">
+                    <p
+                      class="fw-bold"
+                      style="border-bottom:3px solid #a2a2a2;  font-size: 12px;"
+                    >
+                      Last 24 Hours
+                    </p>
+                  </div>
+                  <div class="col-sm-3">
+                    <p>Last 12 Hours</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <p>Last 12 Days</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <p>Last 24 Days</p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-12 d-flex align-items-end justify-content-center progress-flex"
+                >
+                  <div class="col-sm-1">
+                    <div class="progress progress-style">
+                      <div
+                        class=""
+                        role="progressbar"
+                        aria-valuenow=""
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">1.3am</span>
+                  </div>
+                  <div class="col-sm-1">
+                    <div class="progress progress-style" style="height:55px;">
+                      <div
+                        class="bar-height"
+                        role="progressbar"
+                        aria-valuenow=""
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">2.5am</span>
+                  </div>
+                  <div class="col-sm-1">
+                    <div class="progress progress-style" style="height:80px;">
+                      <div
+                        class=""
+                        role="progressbar"
+                        aria-valuenow=""
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">3.5am</span>
+                  </div>
+                  <div class="col-sm-1">
+                    <div class="progress progress-style" style="height:50px;">
+                      <div
+                        class=""
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">5.3am</span>
+                  </div>
+                  <div class="col-sm-1">
+                    <div class="progress progress-style" style="height:80px;">
+                      <div
+                        class=""
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">1.3pm</span>
+                  </div>
+                  <div class="col-sm-1">
+                    <div class="progress progress-style">
+                      <div
+                        class=""
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">3.5pm</span>
+                  </div>
+                  <div class="col-sm-1">
+                    <div class="progress progress-style" style="height:40px;">
+                      <div
+                        class=""
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">1.3am</span>
+                  </div>
+                  <div class="col-sm-1">
+                    <div class="progress progress-style" style="height:35px;">
+                      <div
+                        class=""
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">5.7pm</span>
+                  </div>
+                  <div class="col-sm-1">
+                    <div class="progress progress-style" style="height:60px;">
+                      <div
+                        class=""
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">7.9pm</span>
+                  </div>
+                  <div class="col-sm-1">
+                    <div class="progress progress-style" style="height:80px;">
+                      <div
+                        class=""
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">9.11pm</span>
+                  </div>
+                  <div class="col-sm-1">
+                    <div class="progress progress-style" style="height:55px;">
+                      <div
+                        class=""
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">11.1am</span>
+                  </div>
+                  <div class="col-sm-1">
+                    <div class="progress progress-style" style="height:90px; ">
+                      <div
+                        class=""
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span style="font-size: 8px;">11.1am</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Custom template -->
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Moment JS -->
+    <script src="assets/js/plugin/moment/moment.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <!-- Bootstrap Toggle -->
+    <script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+    <script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+    <!-- Bootstrap Tagsinput -->
+    <script src="assets/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+    <!-- jQuery Validation -->
+    <script src="assets/js/plugin/jquery.validate/jquery.validate.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <script src="assets/js/plugin/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Atlantis JS -->
+    <script src="assets/js/atlantis.min.js"></script>
+    <script type="text/javascript">
+      $("#myModal").on("shown.bs.modal", function() {
+        $("#myInput").trigger("focus");
+      });
+    </script>
+  </body>
+</html>

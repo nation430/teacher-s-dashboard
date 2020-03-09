@@ -172,8 +172,8 @@
 
       <div class="main-panel">
         <div class="container">
-          <div class="page-inner">
-            <h4 class=" fw-bold pt-3 mb">School</h4>
+          <div class="page-inner mt-3">
+            <h4 class=" fw-bold pt-3 mb">Users</h4>
 
             <ul class="nav d-flex justify-content-end ">
               <li class="nav-item">
@@ -234,9 +234,8 @@
                               >
                                 <thead>
                                   <tr>
-                                    <th>School ID</th>
+                                    <th>User ID</th>
                                     <th>Email Address</th>
-
                                     <th>Name</th>
                                     <th>Location</th>
                                     <th>Statues</th>
@@ -324,7 +323,7 @@
                                                 class="modal-title"
                                                 id="exampleModalLongTitle"
                                               >
-                                                Ban User
+                                                User Information
                                               </h5>
                                               <button
                                                 type="button"
@@ -337,81 +336,118 @@
                                                 >
                                               </button>
                                             </div>
-                                            <div class="modal-body d-flex mt-3">
-                                              <div class="col-md-6">
-                                                <div
-                                                  class="form-group form-show-validation row"
-                                                >
-                                                  <label
-                                                    for="name"
-                                                    class="col-md-2 col-sm-4  label-font"
-                                                    >Customer Name
-                                                    <span
-                                                      class="required-label"
-                                                    ></span
-                                                  ></label>
-                                                  <div
-                                                    class=" col-md-10 col-sm-8"
-                                                  >
-                                                    <p class="text-right">
-                                                      Christian Okonkwo
-                                                    </p>
-                                                  </div>
-                                                </div>
-
-                                                <div
-                                                  class="form-group form-show-validation row"
-                                                >
-                                                  <label
-                                                    for="name"
-                                                    class="col-md-2 col-sm-4 label-font"
-                                                    >Email Address
-                                                    <span
-                                                      class="required-label"
-                                                    ></span
-                                                  ></label>
-                                                  <div
-                                                    class=" col-md-10 col-sm-8"
-                                                  >
-                                                    <p class="text-right">
-                                                      chikejonas@gmail.com
-                                                    </p>
-                                                  </div>
-                                                </div>
-
-                                                <div
-                                                  class="form-group form-show-validation row"
-                                                >
-                                                  <label
-                                                    for="name"
-                                                    class="col-md-2 col-sm-4 label-font"
-                                                    >Ban Duration
-                                                    <span
-                                                      class="required-label"
-                                                    ></span
-                                                  ></label>
-                                                  <div
-                                                    class=" col-md-10 col-sm-8"
-                                                  >
-                                                    <div class="form-group">
-                                                      <select
-                                                        class="form-control input-solid input-color "
-                                                        id="exampleFormControlSelect1"
-                                                      >
-                                                        <option>30 Days</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                      </select>
+                                            <div
+                                              class="modal-body d-flex mt--4"
+                                            >
+                                              <div class="col-md-8">
+                                                <form>
+                                                  <div class="form-group row">
+                                                    <label
+                                                      for="inputPassword"
+                                                      class="col-sm-3 col-form-label"
+                                                      >Name</label
+                                                    >
+                                                    <div class="col-sm-9">
+                                                      <input
+                                                        type="name"
+                                                        class="form-control"
+                                                        id="inputPassword"
+                                                        placeholder="Christian Okonkwo"
+                                                      />
                                                     </div>
                                                   </div>
-                                                </div>
+                                                  <div class="form-group row">
+                                                    <label
+                                                      for="inputPassword"
+                                                      class="col-sm-3 col-form-label"
+                                                      >Email</label
+                                                    >
+                                                    <div class="col-sm-9">
+                                                      <input
+                                                        type="email"
+                                                        class="form-control"
+                                                        id="inputPassword"
+                                                        placeholder="Email"
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group row">
+                                                    <label
+                                                      for="inputPassword"
+                                                      class="col-sm-3 col-form-label"
+                                                      >Location</label
+                                                    >
+                                                    <div class="col-sm-9">
+                                                      <input
+                                                        type="name"
+                                                        class="form-control"
+                                                        id="inputPassword"
+                                                        placeholder=""
+                                                      />
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="form-group row">
+                                                    <label
+                                                      for="inputPassword"
+                                                      class="col-sm-3 col-form-label"
+                                                      >User Type</label
+                                                    >
+                                                    <div class="col-sm-9">
+                                                      <input
+                                                        type="name"
+                                                        class="form-control"
+                                                        id="inputPassword"
+                                                        placeholder="Regular"
+                                                      />
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="form-group row">
+                                                    <label
+                                                      for="inputPassword"
+                                                      class="col-sm-3 col-form-label"
+                                                      >Bio</label
+                                                    >
+                                                    <div class="col-sm-9">
+                                                      <textarea
+                                                        class="form-control"
+                                                        id="comment"
+                                                        rows="7"
+                                                      >
+                                                      </textarea>
+                                                    </div>
+                                                  </div>
+
+                                                  <div
+                                                    class="form-group row mt-3"
+                                                  >
+                                                    <p class="col-sm-4 ">
+                                                      Date Joined
+                                                    </p>
+                                                    <div class="col-sm-8">
+                                                      <p>
+                                                        26/01/2019
+                                                      </p>
+                                                    </div>
+                                                  </div>
+
+                                                  <div
+                                                    class="form-group row mt-3"
+                                                  >
+                                                    <p class="col-sm-4 ">
+                                                      UserID
+                                                    </p>
+                                                    <div class="col-sm-8">
+                                                      <p class="">
+                                                        #001
+                                                      </p>
+                                                    </div>
+                                                  </div>
+                                                </form>
                                               </div>
 
-                                              <div class="col-md-6 text-center">
+                                              <div class="col-md-4 text-center">
                                                 <div class="avatar avatar-xxl">
                                                   <img
                                                     src="http://themekita.com/demo-atlantis-bootstrap/livepreview/examples/assets/img/jm_denis.jpg"
@@ -424,10 +460,10 @@
                                             <div class="modal-footer">
                                               <button
                                                 type="button"
-                                                class="btn btn-secondary text-right"
+                                                class="btn btn-secondary text-right btn-footer"
                                                 data-dismiss="modal"
                                               >
-                                                Ban User
+                                                Save
                                               </button>
                                             </div>
                                           </div>

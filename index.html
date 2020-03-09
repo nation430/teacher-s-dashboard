@@ -33,6 +33,9 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/atlantis.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/scroll.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
   </head>
   <body>
@@ -121,7 +124,7 @@
                 </a>
               </li>
               <li class="nav-item ">
-                <a href="Teachers.html">
+                <a href="#">
                   <i class="fas fa-briefcase"></i>
                   <p class="fw-bold" style="font-size:small;">Teacher</p>
                 </a>
@@ -141,7 +144,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="#">
+                <a href="push-notification.html">
                   <i class="fas fa-link"></i>
                   <p class="fw-bold" style="font-size:small;">
                     Push Notification
@@ -150,14 +153,14 @@
               </li>
 
               <li class="nav-item">
-                <a href="support-ticket.html">
+                <a href="#">
                   <i class="fas fa-cog"></i>
                   <p class="fw-bold" style="font-size:small;">Support Ticket</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="settings.html">
+                <a href="help-support.html">
                   <i class="fas fa-question-circle"></i>
                   <p class="fw-bold" style="font-size:small;">
                     Setting
@@ -209,88 +212,7 @@
 
           <div class="page-inner mt-3">
             <div class="row row-card-no-pd">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-header">
-                        <div class="card-title">Line Chart</div>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-container">
-                          <div
-                            style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"
-                            class="chartjs-size-monitor"
-                          >
-                            <div
-                              class="chartjs-size-monitor-expand"
-                              style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"
-                            >
-                              <div
-                                style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"
-                              ></div>
-                            </div>
-                            <div
-                              class="chartjs-size-monitor-shrink"
-                              style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"
-                            >
-                              <div
-                                style="position:absolute;width:200%;height:200%;left:0; top:0"
-                              ></div>
-                            </div>
-                          </div>
-                          <canvas
-                            id="lineChart"
-                            style="display: block; height: 300px; width: 330px;"
-                            width="412"
-                            height="375"
-                            class="chartjs-render-monitor"
-                          ></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-header">
-                        <div class="card-title">Bar Chart</div>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-container">
-                          <div
-                            style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"
-                            class="chartjs-size-monitor"
-                          >
-                            <div
-                              class="chartjs-size-monitor-expand"
-                              style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"
-                            >
-                              <div
-                                style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"
-                              ></div>
-                            </div>
-                            <div
-                              class="chartjs-size-monitor-shrink"
-                              style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"
-                            >
-                              <div
-                                style="position:absolute;width:200%;height:200%;left:0; top:0"
-                              ></div>
-                            </div>
-                          </div>
-                          <canvas
-                            id="barChart"
-                            style="display: block; height: 300px; width: 330px;"
-                            width="412"
-                            height="375"
-                            class="chartjs-render-monitor"
-                          ></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="container"></div>
             </div>
           </div>
         </div>
@@ -300,6 +222,7 @@
     </div>
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
     <script src="assets/js/core/bootstrap.min.js"></script>
 
     <!-- jQuery UI -->
@@ -309,8 +232,20 @@
     <!-- jQuery Scrollbar -->
     <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 
+    <!-- Moment JS -->
+    <script src="assets/js/plugin/moment/moment.min.js"></script>
+
     <!-- Chart JS -->
     <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
 
     <!-- Bootstrap Notify -->
     <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
@@ -318,10 +253,25 @@
     <!-- Bootstrap Toggle -->
     <script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
 
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+    <script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+    <!-- Bootstrap Tagsinput -->
+    <script src="assets/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
     <!-- jQuery Validation -->
     <script src="assets/js/plugin/jquery.validate/jquery.validate.min.js"></script>
 
+    <!-- Magnific Popup -->
+    <script src="assets/js/plugin/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+
     <!-- Atlantis JS -->
     <script src="assets/js/atlantis.min.js"></script>
+    <script type="text/javascript">
+      $("#myModal").on("shown.bs.modal", function() {
+        $("#myInput").trigger("focus");
+      });
+    </script>
   </body>
 </html>
